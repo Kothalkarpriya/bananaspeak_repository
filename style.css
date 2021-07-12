@@ -1,0 +1,18 @@
+body{
+    background-color: aliceblue;
+    margin:1rem;
+    padding:1rem;
+}
+textarea{
+    width: 50%;
+    height:10vh;
+    display:block;
+    margin:1rem;
+    padding:1rem;
+    align-items: center;
+    
+}
+button{
+    color:white;
+    background-color: blueviolet;
+}
