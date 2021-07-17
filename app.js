@@ -1,5 +1,7 @@
 var btnTranslate = document.querySelector('#btn-translate');
 
+btnTranslate.addEventListener("click", clickHandler);
+
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector('#output');
 
@@ -14,11 +16,13 @@ function getTranslationURL(input) {
 
 //for errors we have a function
 function errorHandler(error) {
-    console.log("error occured", error);
+    
+     console.log("error occured", error);
 }
 
 //what to dowhen we have a input or a click
 function clickHandler() {
+    console.log("button clicked");
     // outputDiv.innerText = "translated " + txtInput.value;
     var inputText = txtInput.value;
     fetch(getTranslationURL(inputText))
@@ -27,6 +31,5 @@ function clickHandler() {
             var translatedText = json.contents.translated;
             outputDiv.innerText = translatedText;
         })
-        .catch(errorHandler)
+        .catch(() => alert("You have reached the maximum attempt. Please try after some time. Thank you!"));
 };
-btnTranslate.addEventListener("click", clickHandler);
