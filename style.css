@@ -6,7 +6,9 @@
 *{
     box-sizing: border-box;
 }
-
+nav{
+    display: block;
+}
 body{
     
     margin: 0;
@@ -15,8 +17,7 @@ body{
 nav{
     background-color: var(--primary_color);
     text-align: center;
-    display: block;
-    margin: 2rem;
+
 }
 
 main{
