@@ -12,6 +12,10 @@ textarea{
     align-items: center;
     
 }
+.heading{
+    padding: 1rem;
+    
+}
 button{
     color:white;
     background-color: blueviolet;
