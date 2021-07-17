@@ -2,14 +2,25 @@ var btnTranslate = document.querySelector('#btn-translate');
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector('#output');
 
-txtInput.innerText = "Enter your english sentence here!"
-outputDiv.innerText = "Priya Kothalkar";
+
+var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
 
 
-console.log(txtInput);
+function getTranslationURL(text) {
+    return serverURL + "?" + "text=" + text;
+};
 
-function clickHandler(){
-    outputDiv.innerText = "translated " + txtInput.value;
+function errorHandler(error) {
+    console.log("error occured", error);
 }
+
+function clickHandler() {
+    // outputDiv.innerText = "translated " + txtInput.value;
+
+    var inputText = txtInput.value;
+
+    fetch(getTranslationURL(inputText)).then(response => response.json()).then(json => console.log(json.contents.translated)).catch(errorHandler)
+
+};
 
 btnTranslate.addEventListener("click", clickHandler);
