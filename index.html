@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana Speak</title>
-   <link href="./style.css" rel="stylesheet" />
+    <title>Minion speak</title>
+    <link href="./style.css" rel="stylesheet" />
 </head>
+
 <body>
+    <nav class="alignment">
+        <h1>Let's talk in Minion language</h1>
+    </nav>
+    <main>
+        <section>
+        <textarea id="txt-input"
+            placeholder="What you want to translate please type here in English"></textarea>
+        </section>
+        <section></section>
+            <div class="button-center">
+                <button id="btn-translate">Translate to Minion Speak</button>
+            </div>
+        </section>
+        <section>
+            <div> Translation will go here</div>
+            <div id="output"></div>
+        </section>
+        
+       
+    </main>
 
-    <h1>Talk Banana</h1>
-    <textarea id="txt-input" placeholder="put your sentense in english here and we will convert it into banana"></textarea>
-
-    <button id="btn-translate">Translate</button>
-    <div> Output will go here</div>
-    <div id="output"></div>
+    <footer class="alignment">
+        <div>
+            What it is all about?
+        </div>
+        <p>
+            If you are a fan of Minions then it's absolutely for you. Do you ever wish to have a translator to convert your thought from english to Minion speak or banana language? Then you are welcome here to do so.
+            <br>
+            <em>Happy translating!</em>
+        </p>
+        <div>Made by Priya Kothalkar</div>
+    </footer>
     <script src="app.js" type="text/javascript"></script>
 </body>
-</html>
 
+</html>
