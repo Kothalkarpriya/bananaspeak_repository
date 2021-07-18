@@ -15,6 +15,16 @@ body{
     padding:1rem; */
 
 }
+.hero {
+    padding: 2rem;
+    padding-top: 2rem ;
+}
+
+.hero .hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
 main{
     margin:auto ;
     padding: 1rem;
